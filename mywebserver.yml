@@ -1,0 +1,9 @@
+---
+- hosts: mywebservers
+  become: yes
+  tasks:
+  - name: i want to install apache2
+    apt:
+      name: "{{installjavaonubuntu}}"
+      state: present
+    when: ansible_os_family=="Debian"
