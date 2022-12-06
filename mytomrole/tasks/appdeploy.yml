@@ -1,6 +1,6 @@
 ---
 - name: deploy java app on prod server
   get_url:
-     src: https://maha01dec22.s3.ap-south-1.amazonaws.com/gameoflife.war
+     url: https://maha01dec22.s3.ap-south-1.amazonaws.com/gameoflife.war
      dest: /opt/tomcat/webapps/gameoflife.war
      force_basic_auth: yes
